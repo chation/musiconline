@@ -1,3 +1,51 @@
+/* 用户头像 */
+.userHead_nav {
+    width: 33px;
+    height: 33px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 登录框 */
+#userLoginBox{
+    width: 350px;
+}
+#inputBox {
+    width: 280px;
+    margin: 0 auto;
+}
+
+/* 下拉框 */
+#user_info_nav>span{
+    padding-bottom: 20px;
+}
+#user_info_nav:hover{
+    text-decoration:none;
+}
+#user_info_nav>ul{
+    display: none;
+    padding:0;
+    margin:0 auto;
+    list-style: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #E74C3C;
+    border: 1px solid #E74C3C;
+}
+#user_info_nav:hover>ul{
+    display: block;
+}
+#user_info_nav>ul>li{
+    background-color: #FFFFFF;
+    border: 1px solid #E74C3C;
+    padding: 8px 20px 8px 20px;
+}
+#user_info_nav>ul>li:hover{
+    background-color: #E74C3C;
+    color: #FFFFFF;
+}
+
+
 /* 导航栏 */
 .navbar-default {
     background-color: #e74c3c;
@@ -68,3 +116,4 @@
         background-color: #c0392b;
     }
 }
+
