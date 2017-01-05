@@ -165,6 +165,14 @@ function dropdownPosition(){
     dropDown.style.right = navWidth;
 }
 
+/* 删除指定id的元素 */
+function removeElem(elemId) {
+    if (document.getElementById(elemId)) {
+        var elem = document.getElementById(elemId);
+        elem.parentNode.removeChild(elem);
+    }
+}
+
 /* main() */
 dropdownPosition();
 window.addEventListener("resize", dropdownPosition, false);
