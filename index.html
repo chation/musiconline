@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="css/layout.css"/>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/angular.min.js"></script>
 
 </head>
-<body style="padding-top: 50px" ng-app="myApp">
+<body style="padding-top: 50px">
 <div class="navbar navbar-fixed-top navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -37,7 +36,7 @@
                 <button type="submit" class="btn btn-warning">搜 索</button>
             </form>
             <div class="navbar-form pull-right">
-                <button class="btn btn-success" id="loginAndReg">注 册</button>
+                <a class="btn btn-success" id="loginAndReg" href="pages/regAcc.html">注 册</a>
                 <button class="btn btn-default" id="loginAndReg1" data-toggle="modal" data-target="#user_Login">登 录</button>
                 <a id="user_info_nav" href="#" style="visibility: hidden"><img id="user_img_nav" class="userHead_nav" src=""><span id="user_name_nav" style="font-size: medium; color: white"></span>
                     <ul id="user_info_dropdown" style="top: 50px; right: 0;">
@@ -53,7 +52,6 @@
                     </ul>
                 </a>
             </div>
-
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
 </div><!--导航栏结束-->
@@ -76,8 +74,7 @@
             </div>
             <div class="modal-body">
                 <div id="inputBox" class="text-center">
-                    <h3>还没有帐号?</h3>
-                    <p>填写以下信息加入我们吧~!</p>
+                    <p>登录后在云端保存你的歌单!</p>
                     <form id="form1">
                         <p>
                         <div id="div-email_address" class="input-group">

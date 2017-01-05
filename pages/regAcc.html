@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册 - 在线音乐</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/pagesCSS/regAcc.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <script src="../js/jquery-3.0.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+</head>
+<body>
+<div id="head-div">
+    <a href="../index.html"><span class="icon-music" style="font-size: xx-large"></span></a>
+</div>
+<h4>填写以下信息,加入我们</h4>
+<div id="form-reg" ng-app="myApp">
+    <form id="form1" ng-controller="samePass">
+        <p>
+        <div id="div-user_name" class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2"><i
+                                class="glyphicon glyphicon-user"></i></span>
+            <input name="user_name" required id="user_name" type="text" class="form-control" placeholder="昵称">
+        </div>
+        <span style="visibility: hidden">　</span>
+        </p>
+        <p>
+        <div id="div-email_address" class="input-group">
+            <span class="input-group-addon"><i class="icon-envelope"></i></span>
+            <input name="email_address" id="email_address" class="form-control" type="text" placeholder="邮箱地址">
+        </div>
+        <span id="sameUsername" style="color: red;visibility: hidden" >* 帐号已被占用</span>
+        </p>
+        <p>
+        <div id="div-password" class="input-group">
+            <span class="input-group-addon"><i class="icon-key"></i></span>
+            <input name="password" id="password" class="form-control" ng-model="pass" type="password" placeholder="设置密码">
+        </div>
+        <span style="visibility: hidden">　</span>
+        <p>
+        <div id="div-password-again" class="input-group">
+            <span class="input-group-addon"><i class="icon-key"></i></span>
+            <input id="password-again" class="form-control" ng-model="passA" type="password" placeholder="再次输入密码">
+        </div>
+        <span style="color: red" ng-show="pass!=passA">* 保持两次输入的密码一致</span>
+        </p>
+        <a id="login_to" class="btn btn-block btn-success">
+            <i class="glyphicon glyphicon-log-in"></i> 注 册</a>
+    </form>
+</div>
+<div id="foot-div">
+
+</div>
+<script src="../js/pagesJS/regAcc.js"></script>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("samePass",function($scope){
+
+    })
+</script>
+</body>
+</html>

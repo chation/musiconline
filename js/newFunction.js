@@ -122,7 +122,7 @@ function ajaxLogin(id,pass,classes){
     }
     xmlhttp.open("GET", "pages/loginByNav.php?user_id=" + id + "&user_pass=" + pass, false);
 
-    xmlhttp.onreadystatechange = function xx() {
+    xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             if (xmlhttp.responseText != 0) {
                 var textArray = xmlhttp.responseText.split("|");
@@ -136,6 +136,7 @@ function ajaxLogin(id,pass,classes){
                 var login = document.getElementById("login_to");
                 login.setAttribute("class",classes);
                 login.innerHTML = "<i class='glyphicon glyphicon-log-in'></i> 登 录";
+                removeElem("warningTip");
                 var tips = "账号或密码错误！";
                 var form = document.getElementById("form1");
                 form.insertBefore(alertBox(tips,"warning"),form.childNodes[0]);
@@ -148,6 +149,7 @@ function ajaxLogin(id,pass,classes){
 /* 新建提示框innerHTML */
 function alertBox (tip,color){
     var box = document.createElement("div");
+    box.setAttribute("id","warningTip");
     box.setAttribute("class","alert alert-"+color+" alert-dismissible");
     box.setAttribute("role","alert");
     box.innerHTML = "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><spanaria-hidden='true'>&times;</span></button>"+tip;
@@ -162,6 +164,8 @@ function dropdownPosition(){
     var dropDown = document.getElementById("user_info_dropdown");
     dropDown.style.right = navWidth;
 }
+
+/* main() */
 dropdownPosition();
 window.addEventListener("resize", dropdownPosition, false);
 loginStyle("user_id", "user_pass", "login_to");

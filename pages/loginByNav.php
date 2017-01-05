@@ -5,7 +5,7 @@ $host='127.0.0.1';
 $database='music';
 $conn=new mysqli($host,$username,$userpass,$database);
 if(!$conn){
-	echo 'Could not connect to database.';
+	echo '-1';
 	exit;
 }
 

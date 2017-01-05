@@ -1,0 +1,23 @@
+#head-div{
+    margin:50px 0 50px 0;
+    text-align: center;
+}
+#form-reg{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+body {
+    background-color: #F9F9F9;
+}
+h4,h3{
+    text-align: center;
+}
+a:hover{
+    text-decoration:none;
+}
+#backTo {
+    padding-top: 20px;
+    margin:0 auto;
+    text-align: center;
+}
