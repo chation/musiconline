@@ -10,7 +10,7 @@ if(!$conn){
 }
 
 $user_id = trim($_GET['user_id']);
-$user_pass = md5($_GET['user_pass']);
+$user_pass = $_GET['user_pass'];
 
 $sql="SELECT * FROM `user` WHERE `user_id` = '".$user_id."' ";
 $result=$conn -> query($sql);

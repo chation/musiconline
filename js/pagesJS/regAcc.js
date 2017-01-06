@@ -53,7 +53,7 @@ function loginStyle(nameInput, idInput, passInput, passAgain, loginBtn) {
 
 }
 
-/* Ajax登录 */
+/* Ajax注册 */
 function ajaxLogin(name,id,pass,classes){
     var xmlhttp;
 
@@ -119,6 +119,7 @@ function removeElem(elemId) {
         elem.parentNode.removeChild(elem);
     }
 }
+
 /* 新建提示框innerHTML */
 function alertBox (tip,color){
     var box = document.createElement("div");
@@ -129,7 +130,13 @@ function alertBox (tip,color){
     return box;
 }
 
+/**
+ * main()
+ */
 
+//绑定注册框样式事件
 loginStyle("user_name","email_address","password","password-again","login_to");
+
+//Ajax检查用户名是否重复
 var user_id = document.getElementById("email_address");
 user_id.addEventListener("blur",hasUserName,false);
