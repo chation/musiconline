@@ -67,9 +67,9 @@ function ajaxLogin(id, pass, classes) {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             if (xmlhttp.responseText != 0) {
                 var textArray = xmlhttp.responseText.split("|");
-                document.getElementById("inputBox").innerHTML = "<h3>欢迎回来，" + textArray[1] + "</h3><img class='img-responsive img-circle' src='" + textArray[2] + "'>";
+                document.getElementById("inputBox").innerHTML = "<h3>欢迎回来，" + textArray[1] + "</h3><img class='img-responsive img-circle' src='" + textArray[3] + "'>";
                 document.getElementById("user_name_nav").innerHTML = " " + textArray[1] + "，欢迎你！";
-                document.getElementById("user_img_nav").setAttribute("src", textArray[2]);
+                document.getElementById("user_img_nav").setAttribute("src", textArray[3]);
                 document.getElementById("user_info_nav").style.visibility = "";
                 document.getElementById("loginAndReg").style.visibility = "hidden";
                 document.getElementById("loginAndReg1").style.visibility = "hidden";
@@ -79,6 +79,8 @@ function ajaxLogin(id, pass, classes) {
                 exp.setTime(exp.getTime() + 60 * 1000 * 60 * 24);
                 document.cookie = "music_identify=" + id + ";expires=" + exp.toGMTString();
                 document.cookie = "music_key_code=" + passHash + ";expires=" + exp.toGMTString();
+
+                player(textArray[4]);
 
             } else {
                 var login = document.getElementById("login_to");
@@ -152,10 +154,13 @@ function checkLogin() {
                 if (xmlhttp.responseText != 0) {
                     var textArray = xmlhttp.responseText.split("|");
                     document.getElementById("user_name_nav").innerHTML = " " + textArray[1] + "，欢迎你！";
-                    document.getElementById("user_img_nav").setAttribute("src", textArray[2]);
+                    document.getElementById("user_img_nav").setAttribute("src", textArray[3]);
                     document.getElementById("user_info_nav").style.visibility = "";
                     document.getElementById("loginAndReg").style.visibility = "hidden";
                     document.getElementById("loginAndReg1").style.visibility = "hidden";
+
+                    player(textArray[4]);
+
                 } else {
                     //wait
                 }
@@ -172,9 +177,26 @@ function exitLogin() {
     window.location.reload(true);
 }
 
+
+function player(list) {
+    var myPlaylist = eval("[" + list + "]");
+    $('#musicplayer').ttwMusicPlayer(myPlaylist,
+        {
+            currencySymbol: "<span class='icon-cloud'></span>",
+            buyText: " 收藏",
+            tracksToShow: 10,
+            autoPlay: false,
+            ratingCallback: function (index, playlistItem, rating) {
+            },
+            jPlayer: {}
+        }
+    );
+}
+
 /**
  *  main()
  */
+
 //设置下拉框位置,绑定到窗口resize
 dropdownPosition();
 window.addEventListener("resize", dropdownPosition, false);
@@ -187,3 +209,6 @@ window.addLoadEvent(checkLogin);
 
 //绑定退出登录按钮事件
 document.getElementById("exitUser").addEventListener("click", exitLogin, false);
+
+
+

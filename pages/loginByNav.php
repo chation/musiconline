@@ -16,10 +16,10 @@ $sql="SELECT * FROM `user` WHERE `user_id` = '".$user_id."' ";
 $result=$conn -> query($sql);
 $row = $result -> fetch_row();
 
-if($row[0]==""||$user_pass!=$row[1]){
+if($row[0]==""||$user_pass!=$row[2]){
     echo "0";
 }else{
-    $test = $row[0].'|'.$row[2].'|'.$row[3];
+    $test = $row[0].'|'.$row[1].'|'.$row[2].'|'.$row[3].'|'.$row[4];
     echo $test;
 }
 

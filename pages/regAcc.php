@@ -13,7 +13,7 @@ $user_name = trim($_GET['user_name']);
 $user_id = trim($_GET['email_address']);
 $user_pass = md5($_GET['password']);
 
-$sql = "INSERT INTO `user` (`user_id`, `user_pass`, `user_name`, `user_icon`) VALUES ('$user_id', '$user_pass', '$user_name', 'pic/default.jpg')";
+$sql = "INSERT INTO `user` (`user_id`, `user_name`, `user_pass`, `user_icon`, `music_list`) VALUES ('$user_id', '$user_name', '$user_pass', 'pic/default.jpg', '0')";
 
 if ($conn->query($sql) === TRUE) {
     echo "1";
