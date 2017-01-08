@@ -47,7 +47,7 @@
 
     $.Cassette.defaults = {
         // song names. Assumes the path of each song is songs/name.filetype
-        songs: ['五月天-如果我们不曾相遇', '五月天-兄弟', '五月天-任意门', '五月天-后来的我们', '五月天-成名在望', '五月天-好好', '五月天-派对动物', '五月天-终于结束的起点'],
+        songs: ['五月天-兄弟','五月天-任意门','五月天-后来的我们','五月天-好好','五月天-终于结束的起点'],
         fallbackMessage: 'HTML5 audio not supported',
         // initial sound volume
         initialVolume: 0.7
@@ -960,49 +960,30 @@
     };
 
     $.fn.cassette = function (options) {
-
         if (typeof options === 'string') {
-
             var args = Array.prototype.slice.call(arguments, 1);
-
             this.each(function () {
-
                 var instance = $.data(this, 'cassette');
-
                 if (!instance) {
-
                     logError("cannot call methods on cassette prior to initialization; " +
                         "attempted to call method '" + options + "'");
                     return;
-
                 }
-
                 if (!$.isFunction(instance[options]) || options.charAt(0) === "_") {
-
                     logError("no such method '" + options + "' for cassette instance");
                     return;
-
                 }
-
                 instance[options].apply(instance, args);
-
             });
-
         }
         else {
-
             this.each(function () {
-
                 var instance = $.data(this, 'cassette');
                 if (!instance) {
                     $.data(this, 'cassette', new $.Cassette(options, this));
                 }
             });
-
         }
-
         return this;
-
     };
-
 })(window, jQuery);
