@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>音乐实验室 - 五月天 - 自传</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Old School Cassette Player with HTML5 Audio: Vintage format meets modern web tech: an HTML5 audio player with realistic controls"/>
+    <meta name="keywords"
+          content="cassette, html5, audio, player, css3, buttons, sounds, vintage, old school, javascript, jquery"/>
+    <meta name="author" content="Codrops"/>
+    <link rel="shortcut icon" href="../../pic/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/knobKnob.css"/>
+    <script type="text/javascript" src="js/modernizr.custom.69142.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1><span>音乐实验室</span> 磁带播放机</h1>
+        <h3>专辑 : 五月天 - 自传</h3>
+        <div class="support-note">
+            <span class="no-cssanimations">CSS animations are not supported in your browser</span>
+            <span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+            <span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+            <span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+            <span class="note-ie">Sorry, only modern browsers.</span>
+        </div>
+    </header>
+    <div id="vc-container" class="vc-container">
+        <div class="vc-tape-wrapper">
+            <div class="vc-tape">
+                <div class="vc-tape-back">
+                    <div class="vc-tape-wheel vc-tape-wheel-left">
+                        <div></div>
+                    </div>
+                    <div class="vc-tape-wheel vc-tape-wheel-right">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="vc-tape-front vc-tape-side-a">
+                    <span>A</span>
+                </div>
+                <div class="vc-tape-front vc-tape-side-b">
+                    <span>B</span>
+                </div>
+            </div>
+        </div>
+        <div class="vc-loader"></div>
+    </div><!-- //vc-container -->
+</div><!-- //container -->
+<script src="../../js/jquery-3.0.0.min.js"></script>
+<script src="js/transform.js"></script>
+<script src="js/knobKnob.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cassette.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#vc-container').cassette();
+    });
+</script>
+</body>
+</html>
