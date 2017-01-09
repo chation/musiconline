@@ -177,7 +177,7 @@ function exitLogin() {
     window.location.reload(true);
 }
 
-
+/* 初始化播放器 */
 function player(list) {
     var myPlaylist = eval("[" + list + "]");
     $('#musicplayer').ttwMusicPlayer(myPlaylist,
@@ -209,6 +209,3 @@ window.addLoadEvent(checkLogin);
 
 //绑定退出登录按钮事件
 document.getElementById("exitUser").addEventListener("click", exitLogin, false);
-
-
-
