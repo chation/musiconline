@@ -102,7 +102,7 @@ function alertBox(tip, color) {
     box.setAttribute("id", "warningTip");
     box.setAttribute("class", "alert alert-" + color + " alert-dismissible");
     box.setAttribute("role", "alert");
-    box.innerHTML = "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><spanaria-hidden='true'>&times;</span></button>" + tip;
+    box.innerHTML = "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>" + tip;
     return box;
 }
 

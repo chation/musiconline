@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01ce8189-a5e0-4f14-aaf1-26ea9b472589" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/newFunction.js" afterPath="$PROJECT_DIR$/js/newFunction.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,17 +23,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newFunction.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newFunction.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/newFunction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+            <state relative-caret-position="690">
+              <caret line="180" column="23" lean-forward="false" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
               <folding>
                 <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
                 <element signature="n#!!block;n#loginStyle#0" expanded="false" />
                 <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
                 <element signature="n#!!block;n#alertBox#0" expanded="false" />
                 <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
+                <element signature="n#!!block;n#removeElem#0" expanded="false" />
                 <element signature="n#!!block;n#getCookie#0" expanded="false" />
                 <element signature="n#!!block;n#checkLogin#0" expanded="false" />
                 <element signature="n#!!block;n#exitLogin#0" expanded="false" />
@@ -48,10 +47,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="1380">
+              <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regAcc.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/pagesJS/regAcc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="120" column="1" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#loginStyle#0" expanded="false" />
+                <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
+                <element signature="n#!!block;n#hasUserName#0" expanded="false" />
+                <element signature="n#!!block;n#alertBox#0" expanded="false" />
+                <marker date="1484318723266" expanded="true" signature="5098:5105" ph="×" />
               </folding>
             </state>
           </provider>
@@ -74,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/pages/musiclab/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1679">
-              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+              <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -114,7 +129,6 @@
         <option value="$PROJECT_DIR$/js/index.html" />
         <option value="$PROJECT_DIR$/upload_music.html" />
         <option value="$PROJECT_DIR$/js/angularForNav.js" />
-        <option value="$PROJECT_DIR$/js/pagesJS/regAcc.js" />
         <option value="$PROJECT_DIR$/css/musicPlayer/style.css" />
         <option value="$PROJECT_DIR$/css/layout.css" />
         <option value="$PROJECT_DIR$/js/defalut_music_list" />
@@ -126,6 +140,7 @@
         <option value="$PROJECT_DIR$/pages/musiclab/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/newFunction.js" />
+        <option value="$PROJECT_DIR$/js/pagesJS/regAcc.js" />
       </list>
     </option>
   </component>
@@ -136,8 +151,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
-    <option name="y" value="27" />
+    <option name="x" value="204" />
+    <option name="y" value="25" />
     <option name="width" value="1499" />
     <option name="height" value="1010" />
   </component>
@@ -159,6 +174,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,8 +308,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,6 +319,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="SearchEverywhereHistoryKey" value="opacity&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="D:/www/newPage" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -390,11 +406,14 @@
       <workItem from="1483764369570" duration="19184000" />
       <workItem from="1483854298431" duration="10952000" />
       <workItem from="1483937866277" duration="6327000" />
+      <workItem from="1484025695437" duration="62000" />
+      <workItem from="1484318070365" duration="655000" />
+      <workItem from="1484385971783" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101245000" />
+    <option name="totallyTimeSpent" value="101994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,7 +425,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="27" width="1499" height="1010" extended-state="0" />
+    <frame x="204" y="25" width="1499" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18959616" sideWeight="0.4960091" order="0" side_tool="false" content_ui="combo" />
@@ -520,6 +539,7 @@
             <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
+            <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
             <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
@@ -577,6 +597,7 @@
             <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
+            <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
             <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
@@ -723,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/pagesJS/regAcc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -755,9 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481287064441" expanded="true" signature="359:429" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,9 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,9 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="3219" lean-forward="false" selection-start-line="10" selection-start-column="3219" selection-end-line="10" selection-end-column="3219" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,20 +811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/musiclab/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1679">
-          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -835,20 +829,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/newFunction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+        <state relative-caret-position="690">
+          <caret line="180" column="23" lean-forward="false" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
             <element signature="n#!!block;n#loginStyle#0" expanded="false" />
             <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
+            <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
             <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
             <marker date="1483943192094" expanded="true" signature="4228:4235" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pagesJS/regAcc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="120" column="1" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#loginStyle#0" expanded="false" />
+            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
+            <element signature="n#!!block;n#hasUserName#0" expanded="false" />
+            <element signature="n#!!block;n#alertBox#0" expanded="false" />
+            <marker date="1484318723266" expanded="true" signature="5098:5105" ph="×" />
           </folding>
         </state>
       </provider>
