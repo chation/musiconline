@@ -80,7 +80,7 @@ function ajaxLogin(id, pass, classes) {
                 document.cookie = "music_identify=" + id + ";expires=" + exp.toGMTString();
                 document.cookie = "music_key_code=" + passHash + ";expires=" + exp.toGMTString();
 
-                player(textArray[4]);
+                player(textArray[0]);
 
             } else {
                 var login = document.getElementById("login_to");
@@ -159,7 +159,7 @@ function checkLogin() {
                     document.getElementById("loginAndReg").style.visibility = "hidden";
                     document.getElementById("loginAndReg1").style.visibility = "hidden";
 
-                    player(textArray[4]);
+                    player(textArray[0]);
 
                 } else {
                     //wait
@@ -178,19 +178,22 @@ function exitLogin() {
 }
 
 /* 初始化播放器 */
-function player(list) {
-    var myPlaylist = eval("[" + list + "]");
-    $('#musicplayer').ttwMusicPlayer(myPlaylist,
-        {
-            currencySymbol: "<span class='icon-cloud'></span>",
-            buyText: " 收藏",
-            tracksToShow: 10,
-            autoPlay: false,
-            ratingCallback: function (index, playlistItem, rating) {
-            },
-            jPlayer: {}
-        }
-    );
+function player(username) {
+    removeElem("infoMat");
+    //var myPlaylist = eval("[" + list + "]");
+    $.getJSON("data/json/"+username+".json",function(data){
+        $('#musicplayer').ttwMusicPlayer(data,
+            {
+                currencySymbol: "<span class='icon-cog'></span>",
+                buyText: " 删除",
+                tracksToShow: 10,
+                autoPlay: false,
+                ratingCallback: function (index, playlistItem, rating) {
+                },
+                jPlayer: {}
+            }
+        );
+    })
 }
 
 /**

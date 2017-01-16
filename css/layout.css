@@ -2,6 +2,14 @@ body{
     background-image: url(../pic/bg.jpg);
 }
 
+h1{
+    color: white;
+    text-align: center;
+}
+br{
+    margin: 20px 0 0 0;
+}
+
 /* 用户头像 */
 .userHead_nav {
     width: 33px;
