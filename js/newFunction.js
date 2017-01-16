@@ -184,8 +184,8 @@ function player(username) {
     $.getJSON("data/json/"+username+".json",function(data){
         $('#musicplayer').ttwMusicPlayer(data,
             {
-                currencySymbol: "<span class='icon-cog'></span>",
-                buyText: " 删除",
+                currencySymbol: "<span class='icon-cloud-download'></span>",
+                buyText: " 下载",
                 tracksToShow: 10,
                 autoPlay: false,
                 ratingCallback: function (index, playlistItem, rating) {
@@ -193,7 +193,15 @@ function player(username) {
                 jPlayer: {}
             }
         );
-    })
+    });
+}
+
+/* 从播放器控件下载歌曲 */
+function dowloadByPlayer(e){
+    var title = e.parentNode.firstChild,
+        art = e.parentNode.firstChild.nextSibling,
+        url = "download.php?name=" + title.innerHTML + "&art=" + art.innerHTML;
+    e.setAttribute("href",url)
 }
 
 /**

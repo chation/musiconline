@@ -31,14 +31,14 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#"><span class="icon-comments"> 主页</span></a></li>
-                <li><a href="#"><span class="icon-camera"> 新闻</span></a></li>
-                <li><a href="pages/musiclab"><span class="icon-suitcase"> 音乐实验室</span></a></li>
+                <li><a href="#"><span class="icon-cloud-upload"> 上传</span></a></li>
+                <li><a href="pages/musiclab" target="_blank"><span class="icon-suitcase"> 音乐实验室</span></a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                     <input id="top-nav-search" type="text" class="form-control" placeholder="歌曲,歌手..">
                 </div>
-                <button type="submit" class="btn btn-warning">搜 索</button>
+                <button type="button" class="btn btn-warning">搜 索</button>
             </form>
             <div class="navbar-form pull-right">
                 <a class="btn btn-success" id="loginAndReg" href="pages/regAcc.html">注 册</a>
@@ -70,7 +70,7 @@
         </div><!--左侧栏结束-->
         <div class="col-xs-4">
             <div id="infoMat">
-                <h1>登录后<br>将在这里显示<br>你的歌单</h1>
+                <h1>登录后</h1><h1>将在这里显示</h1><h1>你的歌单</h1>
             </div>
             <div id="musicplayer">
             </div>
@@ -90,8 +90,8 @@
                     <form id="form1">
                         <p>
                         <div id="div-email_address" class="input-group">
-                            <span class="input-group-addon"><i class="icon-envelope"></i></span>
-                            <input id="user_id" class="form-control" type="text" placeholder="邮箱地址">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="user_id" class="form-control" type="text" placeholder="用户名">
                         </div>
                         </p>
                         <p>
@@ -114,6 +114,5 @@
     </div><!-- /.modal -->
 </div>
 <script src="js/newFunction.js"></script>
-<script src="js/default_music_list.js"></script>
 </body>
 </html>

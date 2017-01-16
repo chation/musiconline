@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01ce8189-a5e0-4f14-aaf1-26ea9b472589" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/default_music_list.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Chation.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Chation.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/layout.css" afterPath="$PROJECT_DIR$/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/json/chation99.json" afterPath="$PROJECT_DIR$/data/json/chation99.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/json/test.php" afterPath="$PROJECT_DIR$/data/json/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/userlist/delmusic.php" afterPath="$PROJECT_DIR$/data/userlist/delmusic.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/musicPlayer/ttw-music-player-min.js" afterPath="$PROJECT_DIR$/js/musicPlayer/ttw-music-player-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/newFunction.js" afterPath="$PROJECT_DIR$/js/newFunction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/musiclab/index.html" afterPath="$PROJECT_DIR$/pages/musiclab/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/regAcc.php" afterPath="$PROJECT_DIR$/pages/regAcc.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,17 +37,20 @@
       <file leaf-file-name="newFunction.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/newFunction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="186" column="65" lean-forward="true" selection-start-line="186" selection-start-column="65" selection-end-line="186" selection-end-column="65" />
+            <state relative-caret-position="411">
+              <caret line="170" column="1" lean-forward="true" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
               <folding>
                 <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
                 <element signature="n#!!block;n#loginStyle#0" expanded="false" />
+                <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
                 <element signature="n#!!block;n#alertBox#0" expanded="false" />
                 <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
                 <element signature="n#!!block;n#removeElem#0" expanded="false" />
                 <element signature="n#!!block;n#getCookie#0" expanded="false" />
+                <element signature="n#!!block;n#checkLogin#0" expanded="false" />
                 <element signature="n#!!block;n#exitLogin#0" expanded="false" />
-                <marker date="1484553994626" expanded="true" signature="4229:4236" ph="×" />
+                <element signature="n#!!block;n#player#0" expanded="false" />
+                <marker date="1484570660630" expanded="true" signature="4229:4236" ph="×" />
               </folding>
             </state>
           </provider>
@@ -48,47 +59,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+            <state relative-caret-position="563">
+              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/layout.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regAcc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pagesJS/regAcc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#loginStyle#0" expanded="false" />
-                <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
-                <element signature="n#!!block;n#hasUserName#0" expanded="false" />
-                <element signature="n#!!block;n#alertBox#0" expanded="false" />
-                <marker date="1484318723266" expanded="true" signature="5098:5105" ph="×" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default_music_list.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/default_music_list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-992">
-              <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -118,13 +93,14 @@
         <option value="$PROJECT_DIR$/css/musicPlayer/style.css" />
         <option value="$PROJECT_DIR$/js/defalut_music_list" />
         <option value="$PROJECT_DIR$/js/defalut_music_list.js" />
-        <option value="$PROJECT_DIR$/js/default_music_list.js" />
         <option value="$PROJECT_DIR$/css/pagesCSS/regAcc.css" />
         <option value="$PROJECT_DIR$/pages/regAcc.html" />
         <option value="$PROJECT_DIR$/pages/musiclab/js/jquery.cassette.js" />
-        <option value="$PROJECT_DIR$/pages/musiclab/index.html" />
         <option value="$PROJECT_DIR$/js/pagesJS/regAcc.js" />
+        <option value="$PROJECT_DIR$/js/musicPlayer/ttw-music-player-min.js" />
+        <option value="$PROJECT_DIR$/js/default_music_list.js" />
         <option value="$PROJECT_DIR$/css/layout.css" />
+        <option value="$PROJECT_DIR$/pages/musiclab/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/newFunction.js" />
       </list>
@@ -214,28 +190,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musiclab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musicD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musicD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -255,6 +209,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pagesJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="musicD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="musicD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="musicPlayer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,12 +381,12 @@
       <workItem from="1484025695437" duration="62000" />
       <workItem from="1484318070365" duration="655000" />
       <workItem from="1484385971783" duration="32000" />
-      <workItem from="1484551126146" duration="3261000" />
+      <workItem from="1484551126146" duration="15122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105255000" />
+    <option name="totallyTimeSpent" value="117116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,7 +398,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="204" y="25" width="1499" height="1010" extended-state="1" />
+    <frame x="204" y="25" width="1499" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18959616" sideWeight="0.4960091" order="0" side_tool="false" content_ui="combo" />
@@ -530,12 +502,15 @@
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
             <element signature="n#!!block;n#loginStyle#0" expanded="false" />
+            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
             <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
+            <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
-            <marker date="1484553994626" expanded="true" signature="4229:4236" ph="×" />
+            <element signature="n#!!block;n#player#0" expanded="false" />
+            <marker date="1484570660630" expanded="true" signature="4229:4236" ph="×" />
           </folding>
         </state>
       </provider>
@@ -586,12 +561,15 @@
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
             <element signature="n#!!block;n#loginStyle#0" expanded="false" />
+            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
             <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
+            <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
-            <marker date="1484553994626" expanded="true" signature="4229:4236" ph="×" />
+            <element signature="n#!!block;n#player#0" expanded="false" />
+            <marker date="1484570660630" expanded="true" signature="4229:4236" ph="×" />
           </folding>
         </state>
       </provider>
@@ -776,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/musicPlayer/ttw-music-player-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="3219" lean-forward="false" selection-start-line="10" selection-start-column="3219" selection-end-line="10" selection-end-column="3219" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/json/test.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -802,28 +773,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/default_music_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/musicPlayer/ttw-music-player-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="58" column="212" lean-forward="false" selection-start-line="58" selection-start-column="212" selection-end-line="58" selection-end-column="212" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/musiclab/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1561">
-          <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+        <state relative-caret-position="1012">
+          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/default_music_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-992">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/pagesJS/regAcc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#loginStyle#0" expanded="false" />
             <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
@@ -834,18 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="563">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -854,17 +833,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/newFunction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="186" column="65" lean-forward="true" selection-start-line="186" selection-start-column="65" selection-end-line="186" selection-end-column="65" />
+        <state relative-caret-position="411">
+          <caret line="170" column="1" lean-forward="true" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
             <element signature="n#!!block;n#loginStyle#0" expanded="false" />
+            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
             <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
+            <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
-            <marker date="1484553994626" expanded="true" signature="4229:4236" ph="×" />
+            <element signature="n#!!block;n#player#0" expanded="false" />
+            <marker date="1484570660630" expanded="true" signature="4229:4236" ph="×" />
           </folding>
         </state>
       </provider>
