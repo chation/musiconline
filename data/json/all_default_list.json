@@ -1,0 +1,145 @@
+[
+    {
+        "mp3": "music\/\u4e94\u6708\u5929-\u5982\u679c\u6211\u4eec\u4e0d\u66fe\u76f8\u9047.mp3",
+        "oga": "",
+        "title": "\u5982\u679c\u6211\u4eec\u4e0d\u66fe\u76f8\u9047",
+        "artist": "\u4e94\u6708\u5929",
+        "rating": "5",
+        "buy": "#",
+        "price": "",
+        "duration": "自传",
+        "cover": "pic\/cover\/zz.jpg"
+    },
+    {
+        "mp3": "music\/\u4e94\u6708\u5929-\u5144\u5f1f.mp3",
+        "oga": "",
+        "title": "\u5144\u5f1f",
+        "artist": "\u4e94\u6708\u5929",
+        "rating": "5",
+        "buy": "#",
+        "price": "",
+        "duration": "自传",
+        "cover": "pic\/cover\/zz.jpg"
+    },
+    {
+        "mp3": "music\/\u4e94\u6708\u5929-\u540e\u6765\u7684\u6211\u4eec.mp3",
+        "oga": "",
+        "title": "\u540e\u6765\u7684\u6211\u4eec",
+        "artist": "\u4e94\u6708\u5929",
+        "rating": "5",
+        "buy": "#",
+        "price": "",
+        "duration": "自传",
+        "cover": "pic\/cover\/zz.jpg"
+    },
+    {
+        "mp3": "music\/\u4e94\u6708\u5929-\u987d\u56fa.mp3",
+        "oga": "",
+        "title": "\u987d\u56fa",
+        "artist": "\u4e94\u6708\u5929",
+        "rating": "3",
+        "buy": "#",
+        "price": "",
+        "duration": "自传",
+        "cover": "pic\/cover\/zz.jpg"
+    },
+    {
+        "mp3": "music/五月天-最好的一天.mp3",
+        "oga": "",
+        "title": "最好的一天",
+        "artist": "五月天",
+        "rating": "3",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic/cover/zz.jpg"
+    },
+    {
+        "mp3": "music/五月天-终于结束的起点.mp3",
+        "oga": "",
+        "title": "终于结束的起点",
+        "artist": "五月天",
+        "rating": "3",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic/cover/zz.jpg"
+    },
+    {
+        "mp3": "music/五月天-少年他的奇幻漂流.mp3",
+        "oga": "",
+        "title": "少年他的奇幻漂流",
+        "artist": "五月天",
+        "rating": "2",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic/cover/zz.jpg"
+    },
+    {
+        "mp3": "music/五月天-人生有限公司.mp3",
+        "oga": "",
+        "title": "人生有限公司",
+        "artist": "五月天",
+        "rating": "5",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic/cover/zz.jpg"
+    },
+    {
+        "mp3": "music/五月天-任意门.mp3",
+        "oga": "",
+        "title": "任意门",
+        "artist": "五月天",
+        "rating": "3",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic/cover/zz.jpg"
+    },
+    {
+        "mp3": "music/五月天-成名在望.mp3",
+        "oga": "",
+        "title": "成名在望",
+        "artist": "五月天",
+        "rating": "3",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic/cover/zz.jpg"
+    },
+    {
+        "mp3": "music\/\u4e94\u6708\u5929-\u597d\u597d.mp3",
+        "oga": "",
+        "title": "\u597d\u597d",
+        "artist": "\u4e94\u6708\u5929",
+        "rating": "3",
+        "buy": "#",
+        "price": "",
+        "duration":"自传",
+        "cover": "pic\/cover\/zz.jpg"
+    },
+    {
+        "mp3": "music/陈粒-奇妙能力歌.mp3",
+        "oga": "",
+        "title": "奇妙能力歌",
+        "artist": "陈粒",
+        "rating": "4",
+        "buy": "#",
+        "price": "",
+        "duration":"未收录单曲",
+        "cover": "pic/cover/cl.jpg"
+    },
+    {
+        "mp3": "music/谢安琪-钟无艳.mp3",
+        "oga": "",
+        "title": "钟无艳",
+        "artist": "谢安琪",
+        "rating": "5",
+        "buy": "#",
+        "price": "",
+        "duration":"3/8",
+        "cover": "pic/cover/zwy.png"
+    }
+]

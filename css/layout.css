@@ -1,10 +1,10 @@
 body{
     background-image: url(../pic/bg.jpg);
 }
-
+/* 播放器before */
 #infoMat{
     padding:50px 0 50px 0;
-    margin-top: 40px;
+    margin-top: 60px;
     border: 1px solid #222222;
     border-radius: 20px;
     background-color: rgba(190,190,190,0.2);
@@ -12,6 +12,44 @@ body{
 #infoMat>h1{
     color: white;
     text-align: center;
+}
+
+/* 左侧主窗口 */
+#left_div{
+    background-image: url(../pic/bg_left.jpg);
+    height: 735px;
+    margin-top: 60px;
+    padding: 20px;
+}
+#left_div>h3{
+    color: #FFFFFF;
+    margin:0;
+}
+#musicList{
+    margin: 20px;
+    height: 640px;
+    overflow:auto;
+}
+#musicList>table{
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+}
+tr:hover{
+    background-color: rgba(190,190,190,0.2);
+}
+td>a{
+    color: #FFFFFF;
+}
+td>a:hover{
+    text-decoration-line: none;
+    color: #337AB7;
+}
+
+.small_cover{
+    width: 45px;
+    height: 45px;
+    margin: 10px 0 10px 10px;
 }
 
 /* 用户头像 */

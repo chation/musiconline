@@ -79,6 +79,7 @@ function ajaxLogin(id, pass, classes) {
                 exp.setTime(exp.getTime() + 60 * 1000 * 60 * 24);
                 document.cookie = "music_identify=" + id + ";expires=" + exp.toGMTString();
                 document.cookie = "music_key_code=" + passHash + ";expires=" + exp.toGMTString();
+                removeElem("warningTip");
 
                 player(textArray[0]);
 
@@ -201,7 +202,28 @@ function dowloadByPlayer(e){
     var title = e.parentNode.firstChild,
         art = e.parentNode.firstChild.nextSibling,
         url = "download.php?name=" + title.innerHTML + "&art=" + art.innerHTML;
-    e.setAttribute("href",url)
+    e.setAttribute("href",url);
+}
+
+/* 从List收藏歌曲 */
+function addByList(e){
+    var tr = e.parentNode.parentNode,
+        img = tr.firstChild.firstChild,
+        url = img.getAttribute("src");
+    var name = tr.childNodes[1].innerHTML,
+        art = tr.childNodes[2].innerHTML;
+    var user = getCookie("music_identify");
+    var phpurl = "data/userlist/addmusic.php?name=" + name + "&art=" + art + "&cover=" + url + "&user=" + user;
+    if(user != ""){
+        e.setAttribute("href",phpurl);
+    }else{
+        removeElem("warningTip");
+        var tips = "登录后才能进行收藏或者下载 ! ";
+        var form = document.getElementById("music_box_play");
+        form.insertBefore(alertBox(tips, "warning"), form.childNodes[0]);
+        e.removeAttribute("target");
+    }
+
 }
 
 /**
@@ -220,3 +242,12 @@ window.addLoadEvent(checkLogin);
 
 //绑定退出登录按钮事件
 document.getElementById("exitUser").addEventListener("click", exitLogin, false);
+
+//打印默认歌单表格
+$.getJSON("data/json/all_default_list.json",function(data){
+    var table = document.getElementById("musicTable");
+    for(var i=data.length-1;i>=0;i--){
+        var newTr = table.insertRow();
+        newTr.innerHTML = "<td><img class='small_cover' src='"+data[i].cover+"'></td><td>"+data[i].title+"</td><td>"+data[i].artist+"</td><td>"+data[i].duration+"</td><td><a href='#' onclick='addByList(this)' target='_blank'><span class='icon-cloud'></span> 添加</a></td>"
+    }
+});

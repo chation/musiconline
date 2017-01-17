@@ -16,7 +16,7 @@ function download($file, $down_name){
 
  //判断给定的文件存在与否
  if(!file_exists($file)){
-  die("您要下载的文件已不存在，可能是被删除");
+  die("您要下载的文件不存在，可能已被删除");
  }
  $fp = fopen($file,"r");
  $file_size = filesize($file);
