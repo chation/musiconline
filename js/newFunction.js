@@ -182,7 +182,8 @@ function exitLogin() {
 function player(username) {
     removeElem("infoMat");
     //var myPlaylist = eval("[" + list + "]");
-    $.getJSON("data/json/"+username+".json",function(data){
+    var date = new Date();
+    $.getJSON("data/json/"+username+".json",{Time:date.toDateString(),Math:Math.random()},function(data){
         $('#musicplayer').ttwMusicPlayer(data,
             {
                 currencySymbol: "<span class='icon-cloud-download'></span>",
@@ -244,7 +245,8 @@ window.addLoadEvent(checkLogin);
 document.getElementById("exitUser").addEventListener("click", exitLogin, false);
 
 //打印默认歌单表格
-$.getJSON("data/json/all_default_list.json",function(data){
+var date = new Date();
+$.getJSON("data/json/all_default_list.json",{Time:date.toDateString(),Math:Math.random()},function(data){
     var table = document.getElementById("musicTable");
     for(var i=data.length-1;i>=0;i--){
         var newTr = table.insertRow();
