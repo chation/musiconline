@@ -79,8 +79,11 @@ function ajaxLogin(id, pass, classes) {
                 exp.setTime(exp.getTime() + 60 * 1000 * 60 * 24);
                 document.cookie = "music_identify=" + id + ";expires=" + exp.toGMTString();
                 document.cookie = "music_key_code=" + passHash + ";expires=" + exp.toGMTString();
-                removeElem("warningTip");
 
+                removeElem("warningTip");
+                if(document.getElementById("music_btn")) {
+                    document.getElementById("music_btn").removeAttribute("disabled");
+                }
                 player(textArray[0]);
 
             } else {
@@ -161,6 +164,9 @@ function checkLogin() {
                     document.getElementById("loginAndReg1").style.visibility = "hidden";
 
                     player(textArray[0]);
+                    if(document.getElementById("music_btn")) {
+                        document.getElementById("music_btn").removeAttribute("disabled");
+                    }
 
                 } else {
                     //wait

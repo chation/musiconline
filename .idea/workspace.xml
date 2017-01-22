@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01ce8189-a5e0-4f14-aaf1-26ea9b472589" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/pagesCSS/upload.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/json/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/angularForNav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pic/yourname.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload_music.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upload_music.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/layout.css" afterPath="$PROJECT_DIR$/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pagesCSS/regAcc.css" afterPath="$PROJECT_DIR$/css/pagesCSS/regAcc.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/json/all_default_list.json" afterPath="$PROJECT_DIR$/data/json/all_default_list.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/json/root.json" afterPath="$PROJECT_DIR$/data/json/root.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/json/chation99.json" afterPath="$PROJECT_DIR$/data/json/chation99.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/newFunction.js" afterPath="$PROJECT_DIR$/js/newFunction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/musiclab/css/style.css" afterPath="$PROJECT_DIR$/pages/musiclab/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/musiclab/index.html" afterPath="$PROJECT_DIR$/pages/musiclab/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/regAcc.html" afterPath="$PROJECT_DIR$/pages/regAcc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/upload.js" afterPath="$PROJECT_DIR$/js/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.html" afterPath="$PROJECT_DIR$/upload.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,19 +31,17 @@
         <entry file="file://$PROJECT_DIR$/js/newFunction.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="572">
-              <caret line="220" column="33" lean-forward="true" selection-start-line="220" selection-start-column="33" selection-end-line="220" selection-end-column="33" />
+              <caret line="168" column="21" lean-forward="false" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
               <folding>
                 <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
-                <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
                 <element signature="n#!!block;n#alertBox#0" expanded="false" />
                 <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
                 <element signature="n#!!block;n#removeElem#0" expanded="false" />
                 <element signature="n#!!block;n#getCookie#0" expanded="false" />
-                <element signature="n#!!block;n#checkLogin#0" expanded="false" />
                 <element signature="n#!!block;n#exitLogin#0" expanded="false" />
                 <element signature="n#!!block;n#player#0" expanded="false" />
                 <element signature="n#!!block;n#dowloadByPlayer#0" expanded="false" />
-                <marker date="1485056681179" expanded="true" signature="4271:4278" ph="×" />
+                <marker date="1485081145745" expanded="true" signature="4434:4441" ph="×" />
               </folding>
             </state>
           </provider>
@@ -97,8 +82,8 @@
       <file leaf-file-name="upload.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+            <state relative-caret-position="494">
+              <caret line="88" column="61" lean-forward="true" selection-start-line="88" selection-start-column="61" selection-end-line="88" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -121,8 +106,8 @@
       <file leaf-file-name="upload.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-969">
-              <caret line="16" column="74" lean-forward="true" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+            <state relative-caret-position="-529">
+              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -159,7 +144,6 @@
         <option value="$PROJECT_DIR$/js/musicPlayer/ttw-music-player-min.js" />
         <option value="$PROJECT_DIR$/js/default_music_list.js" />
         <option value="$PROJECT_DIR$/pages/upload.html" />
-        <option value="$PROJECT_DIR$/js/newFunction.js" />
         <option value="$PROJECT_DIR$/pages/musiclab/css/style.css" />
         <option value="$PROJECT_DIR$/pages/musiclab/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -168,8 +152,9 @@
         <option value="$PROJECT_DIR$/upload_music.html" />
         <option value="$PROJECT_DIR$/css/pagesCSS/upload.css" />
         <option value="$PROJECT_DIR$/css/layout.css" />
-        <option value="$PROJECT_DIR$/js/upload.js" />
+        <option value="$PROJECT_DIR$/js/newFunction.js" />
         <option value="$PROJECT_DIR$/upload.html" />
+        <option value="$PROJECT_DIR$/js/upload.js" />
       </list>
     </option>
   </component>
@@ -180,8 +165,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="243" />
-    <option name="y" value="29" />
+    <option name="x" value="226" />
+    <option name="y" value="24" />
     <option name="width" value="1499" />
     <option name="height" value="1010" />
   </component>
@@ -460,12 +445,12 @@
       <workItem from="1484551126146" duration="15122000" />
       <workItem from="1484629907072" duration="15679000" />
       <workItem from="1484812955139" duration="2137000" />
-      <workItem from="1485054944334" duration="18640000" />
+      <workItem from="1485054944334" duration="20859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153572000" />
+    <option name="totallyTimeSpent" value="155791000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +462,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="29" width="1499" height="1010" extended-state="0" />
+    <frame x="226" y="24" width="1499" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18959616" sideWeight="0.4960091" order="0" side_tool="false" content_ui="combo" />
@@ -555,16 +540,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
-            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
             <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
-            <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
             <element signature="n#!!block;n#player#0" expanded="false" />
             <element signature="n#!!block;n#dowloadByPlayer#0" expanded="false" />
-            <marker date="1485056681179" expanded="true" signature="4271:4278" ph="×" />
+            <marker date="1485081145745" expanded="true" signature="4434:4441" ph="×" />
           </folding>
         </state>
       </provider>
@@ -614,16 +597,14 @@
           <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
-            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
             <element signature="n#!!block;n#alertBox#0" expanded="false" />
             <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
             <element signature="n#!!block;n#removeElem#0" expanded="false" />
             <element signature="n#!!block;n#getCookie#0" expanded="false" />
-            <element signature="n#!!block;n#checkLogin#0" expanded="false" />
             <element signature="n#!!block;n#exitLogin#0" expanded="false" />
             <element signature="n#!!block;n#player#0" expanded="false" />
             <element signature="n#!!block;n#dowloadByPlayer#0" expanded="false" />
-            <marker date="1485056681179" expanded="true" signature="4271:4278" ph="×" />
+            <marker date="1485081145745" expanded="true" signature="4434:4441" ph="×" />
           </folding>
         </state>
       </provider>
@@ -845,44 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/newFunction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="220" column="33" lean-forward="true" selection-start-line="220" selection-start-column="33" selection-end-line="220" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
-            <element signature="n#!!block;n#ajaxLogin#0" expanded="false" />
-            <element signature="n#!!block;n#alertBox#0" expanded="false" />
-            <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
-            <element signature="n#!!block;n#removeElem#0" expanded="false" />
-            <element signature="n#!!block;n#getCookie#0" expanded="false" />
-            <element signature="n#!!block;n#checkLogin#0" expanded="false" />
-            <element signature="n#!!block;n#exitLogin#0" expanded="false" />
-            <element signature="n#!!block;n#player#0" expanded="false" />
-            <element signature="n#!!block;n#dowloadByPlayer#0" expanded="false" />
-            <marker date="1485056681179" expanded="true" signature="4271:4278" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/pagesCSS/regAcc.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
@@ -899,10 +842,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/newFunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="168" column="21" lean-forward="false" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
+            <element signature="n#!!block;n#alertBox#0" expanded="false" />
+            <element signature="n#!!block;n#dropdownPosition#0" expanded="false" />
+            <element signature="n#!!block;n#removeElem#0" expanded="false" />
+            <element signature="n#!!block;n#getCookie#0" expanded="false" />
+            <element signature="n#!!block;n#exitLogin#0" expanded="false" />
+            <element signature="n#!!block;n#player#0" expanded="false" />
+            <element signature="n#!!block;n#dowloadByPlayer#0" expanded="false" />
+            <marker date="1485081145745" expanded="true" signature="4434:4441" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+        <state relative-caret-position="494">
+          <caret line="88" column="61" lean-forward="true" selection-start-line="88" selection-start-column="61" selection-end-line="88" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -913,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="16" column="74" lean-forward="true" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+        <state relative-caret-position="-529">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
