@@ -224,32 +224,4 @@ function addByList(e){
         form.insertBefore(alertBox(tips, "warning"), form.childNodes[0]);
         e.removeAttribute("target");
     }
-
 }
-
-/**
- *  main()
- */
-
-//设置下拉框位置,绑定到窗口resize
-dropdownPosition();
-window.addEventListener("resize", dropdownPosition, false);
-
-//给登录框绑定样式事件
-loginStyle("user_id", "user_pass", "login_to");
-
-//识别登录状态
-window.addLoadEvent(checkLogin);
-
-//绑定退出登录按钮事件
-document.getElementById("exitUser").addEventListener("click", exitLogin, false);
-
-//打印默认歌单表格
-var date = new Date();
-$.getJSON("data/json/all_default_list.json",{Time:date.toDateString(),Math:Math.random()},function(data){
-    var table = document.getElementById("musicTable");
-    for(var i=data.length-1;i>=0;i--){
-        var newTr = table.insertRow();
-        newTr.innerHTML = "<td><img class='small_cover' src='"+data[i].cover+"'></td><td>"+data[i].title+"</td><td>"+data[i].artist+"</td><td>"+data[i].duration+"</td><td><a href='#' onclick='addByList(this)' target='_blank'><span class='icon-cloud'></span> 添加</a></td>"
-    }
-});

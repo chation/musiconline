@@ -1,0 +1,129 @@
+body{
+    background-image: url(../../pic/bg.jpg);
+}
+/* 播放器before */
+#infoMat{
+    padding:50px 0 50px 0;
+    margin-top: 60px;
+    border: 1px solid #222222;
+    border-radius: 20px;
+    background-color: rgba(190,190,190,0.2);
+}
+#infoMat>h1{
+    color: white;
+    text-align: center;
+}
+
+/* 左侧主窗口 */
+#left_div{
+    background-image: url(../../pic/bg_left2.jpg);
+    height: 735px;
+    margin-top: 60px;
+    padding: 20px;
+}
+#left_div>h3{
+    color: #FFFFFF;
+    margin:0;
+}
+#musicList{
+    margin: 20px;
+    height: 640px;
+    overflow:auto;
+}
+#musicList>table{
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+}
+tr:hover{
+    background-color: rgba(190,190,190,0.2);
+}
+td>a{
+    color: #FFFFFF;
+}
+td>a:hover{
+    text-decoration-line: none;
+    color: #337AB7;
+}
+
+.small_cover{
+    width: 45px;
+    height: 45px;
+    margin: 10px 0 10px 10px;
+}
+
+/* 用户头像 */
+.userHead_nav {
+    width: 33px;
+    height: 33px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 登录框 */
+#userLoginBox{
+    width: 350px;
+}
+#inputBox {
+    width: 280px;
+    margin: 0 auto;
+}
+
+/* 下拉框 */
+#user_info_nav>span{
+    padding-bottom: 20px;
+}
+#user_info_nav:hover{
+    text-decoration:none;
+}
+#user_info_nav>ul{
+    display: none;
+    padding:0;
+    margin:0 auto;
+    list-style: none;
+    position: absolute;
+    background-color: #222222;
+    color: #9D9D9D;
+    border: 1px solid #080808;
+}
+#user_info_nav:hover>ul{
+    display: block;
+}
+#user_info_nav>ul>li{
+    background-color: #222222;
+    /*border: 1px solid #080808;*/
+    padding: 8px 20px 8px 20px;
+}
+#user_info_nav>ul>li:hover{
+    background-color: #080808;
+    color: #FFFFFF;
+}
+#form_upload{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin:0 auto;
+}
+#form_upload>div{
+    margin-top: 20px;
+}
+.fileBtn{
+    height: 40px;
+    margin:0;
+    padding: 0;
+}
+#result{
+    margin:0 auto;
+    width: 400px;
+    color: #FFFFFF;
+}
+#result>p{
+    font-size: x-large;
+}
+
+#warningTip{
+    position: fixed;
+    top: 51px;
+    right: 0;
+}

@@ -98,7 +98,12 @@ td>a:hover{
     background-color: #080808;
     color: #FFFFFF;
 }
-
+/* 提示框 */
+#warningTip{
+    position: fixed;
+    top: 51px;
+    right: 0;
+}
 
 /* 导航栏(红) */
 /*.navbar-default {*/

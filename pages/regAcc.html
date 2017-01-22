@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>注册 - 在线音乐</title>
+    <title>注册 - 在线音乐共享社区,音乐你的生活 ~!</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../css/pagesCSS/regAcc.css"/>
@@ -13,6 +13,28 @@
     <script src="../js/md5.js"></script>
 </head>
 <body>
+<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><span class=" icon-cloud"></span> 音乐网站</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html"><span class="icon-comments"> 主页</span></a></li>
+                <li><a href="../upload.html"><span class="icon-cloud-upload"> 上传</span></a></li>
+                <li><a href="musiclab"><span class="icon-suitcase"> 音乐实验室</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li><a id="qrcode_nav" href="#">关于作者</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+</div><!--导航栏结束-->
 <div id="head-div">
     <a href="../index.html"><span class="icon-music" style="font-size: xx-large"></span></a>
 </div>
@@ -32,12 +54,13 @@
             <span class="input-group-addon"><i class="icon-envelope"></i></span>
             <input name="email_address" id="email_address" class="form-control" type="text" placeholder="邮箱地址">
         </div>
-        <span id="sameUsername" style="color: red;visibility: hidden" >* 帐号已被占用</span>
+        <span id="sameUsername" style="color: red;visibility: hidden">* 帐号已被占用</span>
         </p>
         <p>
         <div id="div-password" class="input-group">
             <span class="input-group-addon"><i class="icon-key"></i></span>
-            <input name="password" id="password" class="form-control" ng-model="pass" type="password" placeholder="设置密码">
+            <input name="password" id="password" class="form-control" ng-model="pass" type="password"
+                   placeholder="设置密码">
         </div>
         <span style="visibility: hidden">　</span>
         <p>
@@ -51,17 +74,26 @@
             <i class="glyphicon glyphicon-log-in"></i> 注 册</a>
     </form>
 </div>
-<div id="foot-div">
-
+<div id="qrCode">
+    <img src="../pic/wxqrcode.png" class="img-responsive"/>
 </div>
-
-
+<div id="foot-div">
+    <div>
+        Design by Chation for graduation design @2017
+    </div>
+</div>
 <script src="../js/pagesJS/regAcc.js"></script>
 <script>
-    var app = angular.module("myApp",[]);
-    app.controller("samePass",function($scope){
-
-    })
+    var app = angular.module("myApp", []);
+    app.controller("samePass", function ($scope) {});
+    /* 动画显示QR */
+    $(function() {
+        $("#qrcode_nav").hover(function() {
+            $("#qrCode").show(300);
+        }, function() {
+            $("#qrCode").hide(300);
+        });
+    });
 </script>
 </body>
 </html>
