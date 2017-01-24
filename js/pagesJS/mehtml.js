@@ -170,6 +170,32 @@ function checkLogin() {
     }
 }
 
+/* Ajax删除歌曲 */
+function delMusic(name,art,user){
+    var xmlhttp,
+        url = "data/userlist/delmusic.php?name=" + name + "&art=" + art + "&user=" + user,
+        flag = -1;
+
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET", url, false);
+
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            if(xmlhttp.responseText == "1"){
+                flag = 1;
+            }else{
+                flag = 0;
+            }
+        }
+    };
+    xmlhttp.send();
+    return flag;
+}
+
 /* 退出登录刷新页面,删除cookie状态 */
 function exitLogin() {
     document.cookie = "music_identify=";
@@ -177,14 +203,38 @@ function exitLogin() {
     window.location.reload(true);
 }
 
+/* 删除歌单 */
+function delByList(e, event) {
+    event.preventDefault();
+    var tr = e.parentNode.parentNode,
+        name = tr.childNodes[1].innerHTML,
+        art = tr.childNodes[2].innerHTML;
+    var user = getCookie("music_identify");
+    if (confirm("确定从你的歌单移除 " + name + " - " + art + " ?")) {
+        if(delMusic(name,art,user)==1){
+            printfMusic(user);
+        }
+    }
+}
+
+/* 从userlist下载歌曲 */
+function downloadMusicByList(e) {
+    var tr = e.parentNode.parentNode,
+        name = tr.childNodes[1].innerHTML,
+        art = tr.childNodes[2].innerHTML;
+    var url = "download.php?name=" + name + "&art=" + art;
+    e.setAttribute("href", url);
+}
+
 /* 打印默认歌单表格 */
 function printfMusic(username) {
-    var date = new Date();
-    $.getJSON("data/json/"+username+".json", {Time: date.toDateString(), Math: Math.random()}, function (data) {
-        var table = document.getElementById("musicTable");
-        for (var i = data.length - 1; i >= 0; i--) {
+    var date = new Date(),
+        table = document.getElementById("musicTable");
+    table.innerHTML = "<tr><th>预览</th><th>歌曲</th><th>歌手</th><th>下载</th><th>删除</th></tr>";
+    $.getJSON("data/json/" + username + ".json", {Time: date.toDateString(), Math: Math.random()}, function (data) {
+        for (var i = 0; i < data.length; i++) {
             var newTr = table.insertRow();
-            newTr.innerHTML = "<td><img class='small_cover' src='" + data[i].cover + "'></td><td>" + data[i].title + "</td><td>" + data[i].artist + "</td><td><a href='#' onclick='addByList(this)' target='_blank'> <span class='icon-cloud-download'></span></a></td><td><a href='#' onclick='addByList(this)' target='_blank'> <span class='icon-remove'></span></a></td>"
+            newTr.innerHTML = "<td><img class='small_cover' src='" + data[i].cover + "'></td><td>" + data[i].title + "</td><td>" + data[i].artist + "</td><td><a href='#' onclick='downloadMusicByList(this)' target='_blank'><span class='icon-cloud-download'></span></a></td><td><a href='#' onclick='delByList(this,event)' target='_blank'> <span class='icon-remove'></span></a></td>"
         }
     });
 }

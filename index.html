@@ -8,16 +8,13 @@
     <link rel="stylesheet" href="css/layout.css"/>
     <link rel="stylesheet" href="css/musicPlayer/style.css"/>
     <link rel="icon" href="pic/icon.png"/>
-
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/md5.js"></script>
     <script src="js/musicPlayer/jquery.jplayer.js"></script>
     <script src="js/musicPlayer/ttw-music-player-min.js"></script>
 </head>
-<!--
-本页面播放器依赖于开源的ttw-music-player,在此对作者表示感谢
--->
+<!--本页面播放器依赖于开源的ttw-music-player,在此对作者表示感谢-->
 <body style="padding-top: 50px">
 <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
@@ -128,31 +125,22 @@
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
-</div>
+</div><!--弹出框口结束-->
 <script src="js/newFunction.js"></script>
 <script>
-    /**
-     *  main()
-     */
-
     //设置下拉框位置,绑定到窗口resize
     dropdownPosition();
     window.addEventListener("resize", dropdownPosition, false);
-
     //给登录框绑定样式事件
     loginStyle("user_id", "user_pass", "login_to");
-
     //识别登录状态
     window.addLoadEvent(checkLogin);
-
     //绑定退出登录按钮事件
     document.getElementById("exitUser").addEventListener("click", exitLogin, false);
-
     //me.html锁定
     document.getElementById("listUser").addEventListener("click",function(){
         document.getElementById("user_info_nav").setAttribute("href","me.html");
     },false);
-
     //打印默认歌单表格
     var date = new Date();
     $.getJSON("data/json/all_default_list.json",{Time:date.toDateString(),Math:Math.random()},function(data){

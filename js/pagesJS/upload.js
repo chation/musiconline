@@ -72,13 +72,11 @@ function formStyle(idInput, passInput, aluInput, loginBtn) {
     userPass.addEventListener("focus", focus, false);
     alu.addEventListener("focus", focus, false);
 }
-
 /**
  * main()
  */
 //上传框style
 formStyle("music_name", "music_art", "music_alu", "music_btn");
-
 //判断是否登陆
 if (getCookie("music_identify") == "") {
     var tips = "只有登录后才可以上传音乐哦 ! ",
