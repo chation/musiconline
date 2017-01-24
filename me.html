@@ -2,22 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>上传 - 在线音乐共享社区,音乐你的生活 ~!</title>
+    <title>我的收藏 - 在线音乐共享社区,音乐你的生活 ~!</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/pagesCSS/upload.css"/>
-    <link rel="stylesheet" href="css/musicPlayer/style.css"/>
+    <link rel="stylesheet" href="css/pagesCSS/mestyle.css"/>
     <link rel="icon" href="pic/icon.png"/>
 
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/md5.js"></script>
-    <script src="js/musicPlayer/jquery.jplayer.js"></script>
-    <script src="js/musicPlayer/ttw-music-player-min.js"></script>
 </head>
-<!--
-本页面播放器依赖于开源的ttw-music-player,在此对作者表示感谢
--->
 <body style="padding-top: 50px">
 <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
@@ -32,7 +26,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.html"><span class="icon-comments"> 主页</span></a></li>
-                <li class="active"><a href="#"><span class="icon-cloud-upload"> 上传</span></a></li>
+                <li><a href="#"><span class="icon-cloud-upload"> 上传</span></a></li>
                 <li><a href="pages/musiclab" target="_blank"><span class="icon-suitcase"> 音乐实验室</span></a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
@@ -68,37 +62,17 @@
     <div class="row">
         <div class="col-xs-8" id="left_window">
             <div id="left_div">
-                <h3>上传新的音乐</h3>
-                <form id="form_upload" action="pages/upload.php" method="POST" enctype="multipart/form-data">
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon">歌 曲</span>
-                        <input id="music_name" name="name" type="text" class="form-control" aria-describedby="sizing-addon1">
-                    </div>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon">歌 手</span>
-                        <input id="music_art" name="art" type="text" class="form-control" aria-describedby="sizing-addon1">
-                    </div>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon">专 辑</span>
-                        <input id="music_alu" name="alu" type="text" class="form-control" aria-describedby="sizing-addon1">
-                    </div>
-                    <div>
-                        <input  id="music_file" class="fileBtn" name="userfile" required="required" type="file" accept="audio/mpeg" aria-describedby="sizing-addon1">
-                        <span id="show_pro" class="pull-right">0%</span>
-                    </div>
-                    <div class="progress" style="width:100%">
-                        <div id="prog1" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
-                             style="width: 0">
-                            <span class="sr-only"></span>
-                        </div>
-                    </div>
-                    <div>
-                        <button id="music_btn" type="submit" class="btn btn-primary btn-lg pull-right">上传音乐</button>
-                    </div>
-                    <div><p>　</p></div>
-                </form>
-                <div id="result">
-
+                <h3>我的歌单</h3>
+                <div id="musicList">
+                    <table id="musicTable">
+                        <tr>
+                            <th>预览</th>
+                            <th>歌曲</th>
+                            <th>歌手</th>
+                            <th>下载</th>
+                            <th>删除</th>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div><!--左侧栏结束-->
@@ -112,7 +86,8 @@
             </div>
         </div><!--右侧栏结束-->
     </div>
-</div><!--主页面结束-->
+
+</div>
 <div class="modal fade" id="user_Login" tabindex="-1" role="dialog" aria-labelledby="user_Msg_to" aria-hidden="true">
     <div class="modal-dialog" id="userLoginBox">
         <div class="modal-content">
@@ -149,25 +124,6 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
-<script src="js/newFunction.js"></script>
-<script>
-    /**
-     *  main()
-     */
-
-    //设置下拉框位置,绑定到窗口resize
-    dropdownPosition();
-    window.addEventListener("resize", dropdownPosition, false);
-
-    //给登录框绑定样式事件
-    loginStyle("user_id", "user_pass", "login_to");
-
-    //识别登录状态
-    window.addLoadEvent(checkLogin);
-
-    //绑定退出登录按钮事件
-    document.getElementById("exitUser").addEventListener("click", exitLogin, false);
-</script>
-<script src="js/pagesJS/upload.js"></script>
+<script src="js/pagesJS/mehtml.js"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
                         <li>
                             个人中心
                         </li>
-                        <li>
+                        <li id="listUser">
                             我的收藏
                         </li>
                         <li id="exitUser">
@@ -147,6 +147,11 @@
 
     //绑定退出登录按钮事件
     document.getElementById("exitUser").addEventListener("click", exitLogin, false);
+
+    //me.html锁定
+    document.getElementById("listUser").addEventListener("click",function(){
+        document.getElementById("user_info_nav").setAttribute("href","me.html");
+    },false);
 
     //打印默认歌单表格
     var date = new Date();
