@@ -1,6 +1,15 @@
 body{
     background-image: url(../../pic/bg.jpg);
 }
+/* search */
+#search_list{
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+}
+#modal-body{
+    background-color: #404040;
+}
 /* 播放器before */
 #infoMat{
     padding:50px 0 50px 0;

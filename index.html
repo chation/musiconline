@@ -34,9 +34,9 @@
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input id="top-nav-search" type="text" class="form-control" placeholder="歌曲,歌手..">
+                    <input id="top-nav-search" type="text" class="form-control" placeholder="歌曲">
                 </div>
-                <button type="button" class="btn btn-warning">搜 索</button>
+                <a id="search_btn" href="#" type="button" class="btn btn-warning" data-toggle="modal" data-target="#search_box">搜 索</a>
             </form>
             <div class="navbar-form pull-right">
                 <a class="btn btn-success" id="loginAndReg" href="pages/regAcc.html">注 册</a>
@@ -126,6 +126,26 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div><!--弹出框口结束-->
+<div class="modal fade" id="search_box" tabindex="-1" role="dialog" aria-labelledby="user_Msg_to" aria-hidden="true">
+    <div class="modal-dialog" id="searchBox">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">搜索结果</h4>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <table id="search_list">
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    关 闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 <script src="js/newFunction.js"></script>
 <script>
     //设置下拉框位置,绑定到窗口resize
@@ -150,6 +170,8 @@
             newTr.innerHTML = "<td><img class='small_cover' src='"+data[i].cover+"'></td><td>"+data[i].title+"</td><td>"+data[i].artist+"</td><td>"+data[i].duration+"</td><td><a href='#' onclick='addByList(this)' target='_blank'><span class='icon-cloud'></span> 添加</a></td>"
         }
     });
+    //add search music
+    document.getElementById("search_btn").addEventListener("click",searchMusic,false);
 </script>
 </body>
 </html>

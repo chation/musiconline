@@ -127,3 +127,12 @@ td>a:hover{
     top: 51px;
     right: 0;
 }
+/* search */
+#search_list{
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+}
+#modal-body{
+    background-color: #404040;
+}

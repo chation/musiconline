@@ -35,6 +35,14 @@ body{
     color: #FFFFFF;
     border: none;
 }
+#search_list{
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+}
+#modal-body{
+    background-color: #404040;
+}
 tr:hover{
     background-color: rgba(190,190,190,0.2);
 }

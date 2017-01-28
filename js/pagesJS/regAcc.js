@@ -88,6 +88,7 @@ function hasUserName(){
     var xmlhttp;
     var tips = document.getElementById("sameUsername");
     var name = document.getElementById("email_address").value;
+    var patrn = /^.{6,16}$/;
 
     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
         xmlhttp = new XMLHttpRequest();
@@ -98,14 +99,14 @@ function hasUserName(){
 
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            if (xmlhttp.responseText == "1") {
+            if (xmlhttp.responseText == "1" && patrn.exec(name)) {
                 tips.style.visibility = "";
                 tips.style.color = "green";
                 tips.innerHTML = "* 恭喜你,帐号可以使用!";
             }else {
                 tips.style.visibility = "";
                 tips.style.color = "red";
-                tips.innerHTML = "* 账号已被占用!"
+                tips.innerHTML = "* 账号已被占用或帐号不符合规范"
             }
         }
     };

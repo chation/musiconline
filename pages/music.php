@@ -5,31 +5,21 @@ $host='127.0.0.1';
 $database='music';
 $conn=new mysqli($host,$username,$userpass,$database);
 if(!$conn){
-	echo 'Could not connect to database.';
+	echo '-1';
 	exit;
 }
 
 $name = trim($_GET['name']);
-echo "<p>".$name."</p>";
+
 $sql="SELECT * FROM `music` WHERE `address` LIKE '".'%'.$name.'%'."' ";
-$result=$conn -> query($sql);
-$row = $result -> fetch_row();
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+        echo "<tr><td></td><td>".$row['name']."</td><td>".$row['autor']."</td><td><a href='#' onclick='downloadMusicByList(this)' target='_blank'><span class='icon-cloud-download'>下载</span></a></td><td><a href='#' onclick='addBySearch(this)' target='_blank'><span class='icon-cloud'></span> 添加</a></td></tr>";
+    }
+} else {
+    echo "0";
+}
+$conn->close();
 ?>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Clude music</title>
-</head>
-<body>
-	<?php 
-	if($row[0]==""){
-		echo "抱歉,歌曲库里并没有您搜索的歌曲呢..."."</br>"."您可以选择<a href='upload_music.html'>上传</a>...";
-	}else{
-		$test = $row[1].'-'.$row[0];
-		$links = $row[2];
-		echo "<p>"."播放 : ".$test."</p>";
-		echo "<audio controls><source src='".$links."' type='audio/mp3' /></audio>";
-	}
-	?>
-</body>
-</html>

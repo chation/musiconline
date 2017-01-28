@@ -239,23 +239,47 @@ function printfMusic(username) {
     });
 }
 
+/* 导航栏搜索歌曲 */
+function searchMusic(){
+    var name = document.getElementById("top-nav-search"),
+        value = name.value.trim(),
+        table = document.getElementById("search_list");
+    if(value != ""){
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "pages/music.php?name="+value, false);
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.responseText != 0 && xmlhttp.responseText != -1) {
+                    table.innerHTML = xmlhttp.responseText;
+                } else {
+                    table.innerHTML = "您搜索的歌曲在曲库里没有找到,您可以选择<a href='upload.html'>上传</a>";
+                }
+            }
+        };
+        xmlhttp.send();
+    }else{
+        table.innerHTML = "请输入歌曲名...";
+    }
+}
+
+
 /**
  *  main()
  */
-
 //设置下拉框位置,绑定到窗口resize
 dropdownPosition();
 window.addEventListener("resize", dropdownPosition, false);
-
 //给登录框绑定样式事件
 loginStyle("user_id", "user_pass", "login_to");
-
 //识别登录状态
 window.addLoadEvent(checkLogin);
-
 //绑定退出登录按钮事件
 document.getElementById("exitUser").addEventListener("click", exitLogin, false);
-
 //判断是否登陆
 if (getCookie("music_identify") == "") {
     var tips = "只有登录后才能创建自己的歌单哦 ! ",
@@ -263,3 +287,5 @@ if (getCookie("music_identify") == "") {
         btn = document.getElementById("music_btn");
     form.insertBefore(alertBox(tips, "warning"), form.childNodes[0]);
 }
+//add search music
+document.getElementById("search_btn").addEventListener("click",searchMusic,false);

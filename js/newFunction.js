@@ -231,3 +231,59 @@ function addByList(e){
         e.removeAttribute("target");
     }
 }
+
+/* 从搜索列表添加歌曲 */
+function addBySearch(e){
+    var tr = e.parentNode.parentNode,
+        url = "pic/default.jpg";
+    var name = tr.childNodes[1].innerHTML,
+        art = tr.childNodes[2].innerHTML;
+    var user = getCookie("music_identify");
+    var phpurl = "data/userlist/addmusic.php?name=" + name + "&art=" + art + "&cover=" + url + "&user=" + user;
+    if(user != ""){
+        e.setAttribute("href",phpurl);
+    }else{
+        removeElem("warningTip");
+        var tips = "登录后才能进行收藏或者下载 ! ";
+        var form = document.getElementById("music_box_play");
+        form.insertBefore(alertBox(tips, "warning"), form.childNodes[0]);
+        e.removeAttribute("target");
+    }
+}
+
+/* 从搜索列表下载歌曲 */
+function downloadMusicByList(e) {
+    var tr = e.parentNode.parentNode,
+        name = tr.childNodes[1].innerHTML,
+        art = tr.childNodes[2].innerHTML;
+    var url = "download.php?name=" + name + "&art=" + art;
+    e.setAttribute("href", url);
+}
+
+/* 导航栏搜索歌曲 */
+function searchMusic(){
+    var name = document.getElementById("top-nav-search"),
+        value = name.value.trim(),
+        table = document.getElementById("search_list");
+    if(value != ""){
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "pages/music.php?name="+value, false);
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.responseText != 0 && xmlhttp.responseText != -1) {
+                    table.innerHTML = xmlhttp.responseText;
+                } else {
+                    table.innerHTML = "您搜索的歌曲在曲库里没有找到,您可以选择<a href='upload.html'>上传</a>";
+                }
+            }
+        };
+        xmlhttp.send();
+    }else{
+        table.innerHTML = "请输入歌曲名...";
+    }
+}
