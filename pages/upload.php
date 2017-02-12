@@ -43,9 +43,6 @@ $fileurl = $_FILES['userfile']['tmp_name'];//上传后的临时文件地址
 $filename = $_FILES['userfile']['name'];//用户文件名
 $filesize = formatBytes($_FILES['userfile']['size']);//调用单位转换函数,将B转换为MB
 
-/* 使用mime_content_type()函数进行文件MIME类型的判断
-  比单纯的$_FILES['userfile']['type'];判断更加精确
-  以防止文件过滤误伤 */
 if(($_FILES['userfile']['type'] != "audio/mpeg") && (mime_content_type($fileurl) != "audio/mpeg")
 &&($_FILES['userfile']['type'] != "audio/mp3") && (mime_content_type($fileurl) != "audio/mp3")) {
     echo "<p style='color:red;'>您上传的文件貌似不是mp3格式的文件呢~</p>";
