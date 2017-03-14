@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01ce8189-a5e0-4f14-aaf1-26ea9b472589" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="01ce8189-a5e0-4f14-aaf1-26ea9b472589" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -26,8 +24,8 @@
       <file leaf-file-name="newFunction.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/newFunction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="275" column="50" lean-forward="true" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
+            <state relative-caret-position="511">
+              <caret line="275" column="50" lean-forward="false" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
               <folding>
                 <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
                 <element signature="n#!!block;n#loginStyle#0" expanded="false" />
@@ -187,7 +185,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,7 +296,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,11 +418,12 @@
       <workItem from="1485580002406" duration="7315000" />
       <workItem from="1487212689150" duration="196000" />
       <workItem from="1489152296847" duration="34000" />
+      <workItem from="1489308772601" duration="46000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176877000" />
+    <option name="totallyTimeSpent" value="176923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,7 +436,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="226" y="24" width="1499" height="1010" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18948078" sideWeight="0.4960091" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -801,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/newFunction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="275" column="50" lean-forward="true" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
+        <state relative-caret-position="511">
+          <caret line="275" column="50" lean-forward="false" selection-start-line="275" selection-start-column="50" selection-end-line="275" selection-end-column="50" />
           <folding>
             <element signature="n#!!block;n#addLoadEvent#0" expanded="false" />
             <element signature="n#!!block;n#loginStyle#0" expanded="false" />
