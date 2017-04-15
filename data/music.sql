@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-01-05 10:19:16
+-- Generation Time: 2017-04-15 12:31:26
 -- 服务器版本： 5.7.11
 -- PHP Version: 5.6.19
 
@@ -57,18 +57,20 @@ INSERT INTO `music` (`name`, `autor`, `address`) VALUES
 
 CREATE TABLE `user` (
   `user_id` varchar(16) NOT NULL,
-  `user_pass` varchar(16) NOT NULL,
   `user_name` varchar(32) NOT NULL,
-  `user_icon` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+  `user_pass` varchar(32) NOT NULL,
+  `user_icon` varchar(200) NOT NULL,
+  `music_list` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `user`
 --
 
-INSERT INTO `user` (`user_id`, `user_pass`, `user_name`, `user_icon`) VALUES
-('chation99', 'q12we3', '恰西', 'pic/userHead/qx.jpg'),
-('admin001', 'wsad2428210', '管理员001', 'pic/userHead/bq2.jpg');
+INSERT INTO `user` (`user_id`, `user_name`, `user_pass`, `user_icon`, `music_list`) VALUES
+('chation99', '恰西', '4f420fe3daa13a8e8b05957aad06f281', 'pic/userHead/qx.jpg', '0'),
+('admin001', '管理员001', '4f420fe3daa13a8e8b05957aad06f281', 'pic/userHead/bq2.jpg', '0'),
+('123456', '123', '202cb962ac59075b964b07152d234b70', 'pic/default.jpg', '0');
 
 --
 -- Indexes for dumped tables
