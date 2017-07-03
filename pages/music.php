@@ -1,6 +1,6 @@
 ﻿<?php
 $username='root';
-$userpass='q12we3';
+$userpass='root';
 $host='127.0.0.1';
 $database='music';
 $conn=new mysqli($host,$username,$userpass,$database);
